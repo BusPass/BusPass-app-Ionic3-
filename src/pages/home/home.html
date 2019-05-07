@@ -1,0 +1,56 @@
+<ion-header>
+</ion-header>
+
+<ion-content  class="body">
+  <script src="../../assets/css/plugins/bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../../assets/css/plugins/bootstrap-4.2.1-dist/css/bootstrap.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <div class="container-fluid p-30">
+    <div class="row">
+      <div class="col-12">
+        <div class="logo-buspass">
+          <img src="../../assets/imgs/Imagem1.png" alt="logo buspass" class="logo">
+        </div>
+      </div>
+    </div>
+    <form [formGroup]="loginForm"class="formulario-login">
+
+
+      <div class="row">
+        <div class="col-12">
+          <input ion-input formControlName="email" type="text" #usuario class="input-email" placeholder="Digite seu e-mail" />
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col-12">
+          <input ion-input formControlName="password" type="password" class="input-senha" #senha placeholder="Digite sua Senha">
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-12 text-center">
+          <button class="button-access" type="submit" [disabled]="loginForm.invalid" (click)="LoginComEmail()">Entrar</button>
+        </div>
+      </div>
+
+
+
+    </form>
+
+
+    <div class="pergunta-primeiro-log" (click)="criarconta()">
+      <span>Primeira vez?</span>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="bus-pass-app">
+          <a ><span>Sobre o BusPass</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</ion-content>

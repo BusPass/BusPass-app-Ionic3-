@@ -1,0 +1,51 @@
+<!--
+  Generated template for the CriaContaPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons left start>
+      <button (click)="volta()" ion-button icon-only color="Dark">
+        <ion-icon color="Dark" name="arrow-round-back"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>Cadastro do BusPass</ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="body">
+  <div class="formsulario">
+    <div class="container">
+      <form [formGroup]="registerForm" id="contact">
+        <h3>Bem Vindo ao cadastro do BusPass</h3>
+        <h4>Por favor, preencha os dados abaixo</h4>
+        <fieldset>
+          <input formControlName="nome" placeholder="Nome Completo" type="text" tabindex="1" required autofocus>
+        </fieldset>
+        <fieldset>
+          <input formControlName="email" placeholder="Digite seu Email" type="email" tabindex="2" required>
+        </fieldset>
+        <fieldset>
+          <input formControlName="password" class="cadastro-senha" placeholder="Digite sua senha" tabindex="3"
+            type="password" style="padding: 4px;">
+        </fieldset>
+        <fieldset>
+          <input formControlName="confirmPassword" class="cadastro-senha" placeholder="Confirme sua senha" tabindex="4"
+            type="password" style="padding: 4px;">
+        </fieldset>
+        <fieldset>
+          <input formControlName="codigocartao" placeholder="Código do seu cartão" type="tel" tabindex="5" required>
+        </fieldset>
+
+
+        <fieldset>
+          <button [disabled]="registerForm.invalid" name="submit" type="submit" id="cadastrar-envio"
+            (click)="cadastrarUsuario()">Cadastrar</button>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</ion-content>

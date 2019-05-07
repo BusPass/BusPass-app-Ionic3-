@@ -1,0 +1,178 @@
+<script src="../../assets/css/plugins/bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="../../assets/css/plugins/bootstrap-4.2.1-dist/css/bootstrap.min.css" />
+<ion-header>
+  <div class="header">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <div class="icons-header">
+            <div class="row">
+              <div class="col-9">
+                <div class="conteudo-header">
+                  <div class="logo-menu">
+                    <img src="../../assets/imgs/Imagem1.png" alt="logo buspass" srcset="">
+                    <span class="titulo-buspass">BusPass</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="menu-button text-right transparente" style="right: 15px;">
+                  <button class="transparente" menuToggle icon-only>
+                    <ion-icon name='menu'></ion-icon>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-header>
+
+
+
+<ion-content class="body">
+
+
+  <div class="container-fluid p-0 style-saldo">
+    <div class="jumbotrom-saldo">
+
+      <div id="saldo">
+        {{cartao.saldo  | currency: 'R$'}}
+      </div>
+      <div class="tempo-integracao">
+        <span>Tempo de Integração Restante: </span>
+        <input class="mostrarValor" type="text" id="mostrarValor" size="3" readonly="readonly" value="00:00" />
+        <label for="min"> &nbsp;&nbsp;</label><input type="hidden" id="min" value=120 size="2" maxlength="3" />
+        <label for="seg"> </label><input type="hidden" id="seg" value=0 size="2" maxlength="2" />
+        <svg width="22" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M10.267 18.9c-3.949-.003-7.486-2.33-8.893-5.852C-.033 9.527.981 5.542 3.924 3.03 6.868.517 11.13-.002 14.64 1.725c3.509 1.727 5.539 5.341 5.103 9.087l.729.076c.041-.361.062-.724.062-1.088 0-5.412-4.596-9.8-10.266-9.8S0 4.388 0 9.8c0 5.412 4.597 9.8 10.267 9.8.38 0 .761-.02 1.14-.06l-.08-.696c-.352.037-.706.056-1.06.056z"
+            fill="#000" />
+          <path
+            d="M19.059 10.165c.005-.12.008-.242.008-.365 0-4.64-3.94-8.4-8.8-8.4-4.86 0-8.8 3.76-8.8 8.4 0 4.64 3.94 8.4 8.8 8.4.128 0 .256-.003.383-.008l-.033-.7a7.988 7.988 0 0 1-.35.008C5.812 17.5 2.2 14.053 2.2 9.8s3.612-7.7 8.067-7.7 8.066 3.447 8.066 7.7c0 .112-.002.224-.007.335l.733.03z"
+            fill="#000" />
+          <path
+            d="M9.9 2.8h.733v.7H9.9v-.7zM4.822 5.098l.519-.495.518.495-.519.495-.518-.495zM2.933 9.45h.734v.7h-.734v-.7zm1.889 5.052l.518-.495.52.495-.52.495-.518-.495zM9.9 16.1h.733v.7H9.9v-.7zm6.967-6.65h.733v.7h-.733v-.7zm-2.193-4.352l.519-.495.518.495-.518.495-.519-.495zM11.671 9.8a.342.342 0 0 0-.108-.247l-.93-.888V4.55H9.9v4.115l-.822.785H5.5v.7h3.578l.93.887a.376.376 0 0 0 .518 0l1.037-.99a.342.342 0 0 0 .108-.247zm-1.404.495L9.748 9.8l.519-.495.518.495-.518.495zM16.133 14h.734c.405 0 .733.313.733.7h.733c0-.773-.656-1.4-1.466-1.4v-.7h-.734v.7c-.81 0-1.466.627-1.466 1.4 0 .773.656 1.4 1.466 1.4h.734c.405 0 .733.313.733.7 0 .387-.328.7-.733.7h-.734c-.405 0-.733-.313-.733-.7h-.733c0 .773.656 1.4 1.466 1.4v.7h.734v-.7c.81 0 1.466-.627 1.466-1.4 0-.773-.656-1.4-1.466-1.4h-.734c-.405 0-.733-.313-.733-.7 0-.387.328-.7.733-.7zm2.934 1.4h.733v.7h-.733v-.7zm-5.867 0h.733v.7H13.2v-.7z"
+            fill="#000" />
+          <path
+            d="M16.5 10.5c-3.037 0-5.5 2.35-5.5 5.25S13.463 21 16.5 21c3.038 0 5.5-2.35 5.5-5.25-.003-2.898-2.464-5.247-5.5-5.25zm0 9.8c-2.633 0-4.767-2.037-4.767-4.55s2.134-4.55 4.767-4.55c2.633 0 4.767 2.037 4.767 4.55-.003 2.512-2.136 4.547-4.767 4.55z"
+            fill="#000" /></svg>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div class="card-detalhes-uso">
+          <div class="detalhes-uso-um">
+            <span>Detalhes do uso do cartão</span>
+            <ion-buttons icon-only right>
+              <ion-icon name="arrow-dropright-circle"></ion-icon>
+            </ion-buttons>
+
+          </div>
+
+
+          <span>Cartão utilizado 10 vezes.</span>
+
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-12">
+        <div class="card-detalhes-uso">
+          <div class="detalhes-uso-um">
+            <span> Última viagem </span>
+            <ion-buttons icon-only right>
+              <ion-icon name="arrow-dropright-circle"></ion-icon>
+            </ion-buttons>
+          </div>
+          <span id="ultima-viagem">12/12/12</span>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+
+
+        <div class="card-detalhes-uso">
+          <div class="detalhes-uso-um">
+            <span>Recarregar</span>
+            <ion-buttons icon-only right>
+              <ion-icon name="arrow-dropright-circle"></ion-icon>
+            </ion-buttons>
+          </div>
+          <div class="credits">
+            <button class="inserir-creditos"><span>INSERIR CRÉDITOS</span></button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="catraca-svg">
+      <button (click)="simulador" id="desconta-saldo">
+        <svg width="94" height="97" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0)">
+            <path d="M41.014 22.62v6.154H2.982C1.334 28.774 0 27.396 0 25.698c0-1.7 1.334-3.077 2.982-3.077h38.032z"
+              fill="#BFDCFF" />
+            <path
+              d="M8.002 52.584l33.012-23.076v7.432L11.348 57.679c-1.364.954-3.218.587-4.14-.82-.925-1.408-.57-3.321.794-4.275z"
+              fill="#89C1FF" />
+            <path
+              d="M44.904 16.572c-3.295 0-5.967 2.756-5.967 6.156v12.238c0 3.4 2.672 6.157 5.967 6.157h8.314V16.572h-8.314z"
+              fill="#1E8AFF" />
+            <path
+              d="M94 12.068v75.941c0 1.698-1.334 3.077-2.981 3.077H54.608c-1.646 0-2.982-1.379-2.982-3.077V12.068c0-3.4 2.67-6.154 5.963-6.154h30.448C91.331 5.914 94 8.67 94 12.068z"
+              fill="#FF2B59" />
+            <path
+              d="M94 12.068v75.941c0 1.698-1.334 3.077-2.982 3.077H72.813V5.914h15.224C91.33 5.914 94 8.67 94 12.068z"
+              fill="#B33E78" />
+            <path d="M94 12.068v15.1H51.626v-15.1c0-3.4 2.67-6.154 5.963-6.154h30.448C91.331 5.914 94 8.67 94 12.068z"
+              fill="#FFEAC3" />
+            <path d="M94 12.068v15.1H72.813V5.914h15.224C91.33 5.914 94 8.67 94 12.068z" fill="#FFD17E" />
+            <path
+              d="M81.197 16.541c0 1.698-1.334 3.077-2.981 3.077H67.413c-1.648 0-2.982-1.378-2.982-3.077 0-1.698 1.334-3.077 2.981-3.077h10.804c1.647 0 2.981 1.379 2.981 3.077z"
+              fill="#FF2B59" />
+            <path
+              d="M81.197 16.541c0 1.698-1.334 3.077-2.981 3.077h-5.403v-6.153h5.403c1.648 0 2.981 1.378 2.981 3.076z"
+              fill="#B33E78" />
+            <path
+              d="M81.843 43.534l-8.752 9.031h4.338c1.645 0 2.981 1.379 2.981 3.077s-1.336 3.077-2.981 3.077H65.891c-1.562 0-2.98-1.32-2.98-3.069l-.002-.008V43.74c0-1.7 1.336-3.076 2.982-3.076 1.648 0 2.982 1.376 2.982 3.076v4.476l8.753-9.033a2.915 2.915 0 0 1 4.216 0 3.147 3.147 0 0 1 0 4.352z"
+              fill="#FFEAC3" />
+            <path
+              d="M81.843 43.534l-8.752 9.031h4.338c1.645 0 2.981 1.379 2.981 3.077s-1.336 3.077-2.981 3.077h-4.616v-14.57l4.814-4.967a2.915 2.915 0 0 1 4.216 0 3.147 3.147 0 0 1 0 4.352z"
+              fill="#FFD17E" />
+          </g>
+          <defs>
+            <clipPath id="clip0">
+              <path fill="#fff" d="M0 0h94v97H0z" />
+            </clipPath>
+          </defs>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+</ion-content>

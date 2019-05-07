@@ -1,0 +1,240 @@
+page-home {
+
+.body{
+    font-family: 'Roboto', sans-serif;
+  
+    height: 100%;
+    background: linear-gradient(180deg, rgba(10, 138, 54, 0.69) 8.14%, rgba(6, 168, 61, 0.38) 31.23%, rgba(53, 193, 238, 0.31) 63.3%, #1D9BE2 95.63%)
+}
+.p-30 {
+   padding-right: 30px;
+   padding-left: 30px;
+}
+
+.logo-buspass {
+   text-align: center;
+   margin-top: 30px;
+   margin-bottom: 100px;
+}
+
+
+.formulario-login {
+   margin-top: 40px;
+}
+
+.input-email {
+   border-radius: 20px 20px 0px 0px;
+   border: none;
+   align-content: center;
+   height: 50px;
+   color: #BBBBBB;
+   cursor: pointer;
+   width: 30%;
+   outline: none;
+   font-size: 16px;
+   padding-left: 15px;
+   -webkit-box-shadow: 0px -5px 20px 1px rgba(0, 0, 0, 0.14);
+   -moz-box-shadow: 0px -5px 20px 1px rgba(0, 0, 0, 0.14);
+   box-shadow: 0px -5px 20px 1px rgba(0, 0, 0, 0.14);
+}
+.input-email:hover {
+   border-radius: 10px 10px 10px 10px;
+   transition: 0.5s all;
+   margin-bottom: 12px;
+   box-shadow: 5px 8px 15px #0c0c0c60;
+}
+
+.input-senha {
+   margin-top: 1px;
+   border-radius: 0px 0px 20px 20px;
+   border: none;
+   align-content: center;
+   height: 50px;
+   padding-left: 15px;
+   -webkit-box-shadow: 0px 5px 20px 1px rgba(0, 0, 0, 0.14);
+   -moz-box-shadow: 0px 5px 20px 1px rgba(0, 0, 0, 0.14);
+   box-shadow: 0px 5px 20px 1px rgba(0, 0, 0, 0.14);
+   cursor: pointer;
+   width: 30%;
+   outline: none;
+   font-size: 16px;
+}
+
+.input-senha:hover{
+   border-radius: 10px 10px 10px 10px;
+   transition: 0.5s all;
+   margin-top: 12px;
+   box-shadow: 5px 8px 15px #0c0c0c60;
+}
+
+.formulario-login  .input-email::placeholder{
+   color: #BBBBBB; 
+   font-size: 16px;
+}
+
+.formulario-login .input-senha::placeholder{
+   color:#BBBBBB;
+   font-size: 16px;
+}
+
+.formulario-login button {
+   background-color: #03365D;
+   width: 50%;
+   height: 50px;
+   border-radius: 15px;
+   border: none;
+   color: #ffffff;
+   margin-top: 25px;
+   outline: none !important;
+   box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.14);
+   margin-top: 28px;
+   border: 2px solid #fff;
+}
+
+.formulario-login button:hover {
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.14);
+  background-color: rgb(5, 31, 51);
+}
+
+.pergunta-primeiro-log{
+   text-align: center;
+   margin: 0 auto;
+   margin-top: 30px;
+   color: #000000;
+   font-size: 15px;
+   font-weight: bold;
+}
+
+.pergunta-primeiro-log span:hover{
+   text-align: center;
+   margin-top: 26px;
+   color: rgba(255, 255, 255, 0.171);
+   font-size: 15px;
+}
+
+
+.bus-pass-app {
+   text-align: center;
+   margin-top: 28px;
+}
+
+.bus-pass-app a span{
+   color:#323131;
+   margin-top: 28px;
+}
+
+.we-custom-app a span {
+   color: rgba(255, 255, 255, 0.822);
+   font-size: 16px;
+   text-align: center;
+   width: 100%;
+}
+
+/*tela serviços*/
+body {
+   font-family: 'Roboto', sans-serif;
+}
+
+a{
+   text-decoration: none !important;
+}
+
+.p-30 {
+   padding-right: 30px;
+   padding-left: 30px;
+}
+
+.logo-wecustom {
+   text-align: center;
+   margin-top: 20px;
+}
+
+.formulario-login {
+   margin-top: 30px;
+}
+
+.input-email {
+   border-radius: 20px 20px 0px 0px;
+   border: none;
+   align-content: center;
+   height: 50px;
+   color: rgb(124, 119, 119);
+   cursor: pointer;
+   width: 100%;
+   outline: none;
+   font-size: 16px;
+   padding-left: 15px;
+   -webkit-box-shadow: 0px -5px 20px 1px rgba(0, 0, 0, 0.14);
+   -moz-box-shadow: 0px -5px 20px 1px rgba(0, 0, 0, 0.14);
+   box-shadow: 0px -5px 20px 1px rgba(0, 0, 0, 0.14);
+}
+
+.input-senha {
+   margin-top: 1px;
+   border-radius: 0px 0px 20px 20px;
+   border: none;
+   align-content: center;
+   height: 50px;
+   padding-left: 15px;
+   -webkit-box-shadow: 0px 5px 20px 1px rgba(0, 0, 0, 0.14);
+   -moz-box-shadow: 0px 5px 20px 1px rgba(0, 0, 0, 0.14);
+   box-shadow: 0px 5px 20px 1px rgba(0, 0, 0, 0.14);
+   cursor: pointer;
+   width: 100%;
+   outline: none;
+   font-size: 16px;
+}
+
+.formulario-login .input-email::placeholder {
+   color: rgb(124, 119, 119);
+   font-size: 16px;
+}
+
+.formulario-login .input-senha::placeholder {
+   color: #BBBBBB;
+   font-size: 16px;
+}
+
+.button-access {
+   background-color: #03365D;
+   width: 100%;
+   height: 50px;
+   border-radius: 30px;
+   border: none;
+   margin-top: 25px;
+   outline: none !important;
+   box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.14)
+}
+
+.button-access:active{
+   background-color: rgb(6, 33, 53);
+}
+
+.button-access a{
+   color: #fff;
+}
+
+.sobre-app {
+   text-align: center;
+   margin-top: 26px;
+}
+
+.sobre-app span {
+   font-size: 12px;
+   color: rgba(255, 255, 255, 0.822);
+}
+
+.we-custom-app {
+   text-align: center;
+}
+
+.we-custom-app a span {
+   color: rgba(255, 255, 255, 0.822);
+   font-size: 16px;
+   text-align: center;
+   width: 100%;
+}
+.transparente{
+   background-color:  rgba(255, 255, 255, 0);
+}
+}

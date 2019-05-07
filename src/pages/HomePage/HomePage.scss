@@ -1,0 +1,327 @@
+page-HomePage{
+    .body {
+        font-family: 'Roboto', sans-serif !important;
+        background: rgba(248, 246, 244, 0.69);
+    }
+    
+    
+    form{
+        display: block;
+    }
+    
+    .header {
+        background-color: #0C8AE9;
+        ;
+        box-shadow: 4px 1px 5px #000000;
+        width: 100%;
+    }
+
+ 
+
+  
+    
+    .conteudo-header {
+        display: flex;
+    }
+    
+    .logo-menu img {
+        width: 30%;
+    }
+    
+    .titulo-buspass {
+        font-weight: bold;
+        color: #00000067;
+    }
+    
+    .menu-button ion-icon {
+        font-size: 35px;
+        margin-top: 7px;
+        color: #00000067;
+    }
+    
+    .sidebar-overlay {
+        background-color: rgba(0, 0, 0, 0);
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 1;
+        right: 0;
+        top: 0;
+        transition: background-color 0.3s ease-in;
+        pointer-events: none;
+    }
+    
+    .overlay-active {
+        pointer-events: auto;
+        background-color: rgba(0, 0, 0, 0.6);
+        transition: background-color 0.5s ease-in;
+    }
+    
+    .padding-lista {
+        padding: 20px 25px 0px 25px;
+    }
+    
+    .menu-close {
+        font-size: 38px;
+        color: #6D6D6D;
+        transition: 0.4s;
+    }
+    
+    .menu-lista {
+        position: fixed;
+        z-index: 9999;
+        width: 80%;
+        height: 100%;
+        background-color: white;
+        left: -100%;
+        transition: left 0.3s ease-in;
+    }
+    
+    .menu-lista-ativado {
+        height: 100%;
+        left: 0%;
+        transition: all 0.4s ease-in;
+        height: 100%;
+        left: 0%;
+        transition: left 0.3s ease-in;
+    }
+    
+    .user-name {
+        font-size: 16px;
+        color: #6D6D6D;
+        font-weight: 700;
+    }
+    
+    .access-date {
+        font-size: 12px;
+        color: #BBBBBB;
+    }
+    
+    .menu-lista nav {
+        margin-top: 60px;
+    }
+    
+    .menu-lista nav ul li {
+        list-style: none;
+        display: flex;
+        vertical-align: middle;
+        padding-top: 10px;
+        border-bottom: solid 1px #E9E9E9;
+    }
+    
+    .menu-lista nav ul li:last-child {
+        border: none;
+    }
+    
+    .menu-lista nav ul li a {
+        display: inline-flex;
+        margin-left: 25px;
+    }
+    
+    .menu-lista nav li ion-icon {
+        color: #6d6d6d;
+        font-size: 19px;
+    }
+    
+    .menu-lista nav li a span {
+        font-size: 14px;
+        color: #6D6D6D;
+        padding-bottom: 1px;
+        margin-left: 10px;
+        padding-bottom: 12px;
+        display: inline-flex;
+    }
+    
+    
+    
+    .jumbotrom-saldo {
+        height: 129px;
+        background: rgba(17, 181, 72, 0.96);
+        box-shadow: 0px 0px 10px #000;
+        margin-top: 20px;
+    }
+    
+    .jumbotrom-saldo a {
+        color: black;
+        text-decoration: none;
+        padding: 10px;
+    }
+    
+    .jumbotrom-saldo #saldo {
+        text-align: center;
+        font-size: 39px;
+        color: #fff;
+    }
+    
+    .jumbotrom-saldo .tempo-integracao span {
+        text-align: justify;
+        font-weight: 700;
+        font-size: 13px;
+    }
+    
+    
+    .card-detalhes-uso {
+        background: #FFFFFF;
+        box-shadow: -1px 7px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        margin-top: 15px;
+        width: 100%;
+        outline: none;
+        cursor: pointer;
+        height: 70px;
+    }
+    
+    .card-detalhes-uso a {
+        text-decoration: none;
+    }
+    
+     .detalhes-uso-um  {
+        border-bottom: 1px solid black;
+        color: black;
+        width: 100%;
+        display: inline-flex;
+        
+    }
+ 
+   .detalhes-uso-um ion-icon{
+       position: absolute;
+       
+   }
+    
+    .detalhes-uso-um span {
+        padding: 5px 10px;
+    }
+    
+    #numero-uso-cartao {
+        padding: 10px;
+        color: black;
+        font-size: 12px;
+    }
+    
+    #ultima-viagem {
+        padding: 10px;
+        color: black;
+        font-size: 12px;
+    }
+    
+    
+    .tempo-integracao input {
+        border: solid 1px white;
+    }
+    
+    #desconta-saldo {
+        background: rgb(182, 185, 11);
+        box-shadow: 2px 9px 18px rgba(0, 0, 0, 0.66);
+        border-radius: 15px;
+        border: none;
+        margin: 0 auto;
+        text-align: center;
+        outline: none;
+        margin-top: 20px;
+    }
+    
+    .credits{
+        text-align: center;
+        margin-top: 10px;
+    }
+    .credits button{
+        background: rgba(19, 217, 27, 0.86);
+        box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.33);
+        border-radius: 100px;
+        text-align: center;
+        border: none;
+        outline: none;
+        text-align:center;
+        padding: 15px 50px;
+        margin-top: 10px;
+        outline: none !important;
+    }
+    .inserir-creditos{
+        background: rgba(19, 217, 27, 0.86);
+        box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.33);
+        border-radius: 100px;
+        text-align: center;
+        border: none;
+        outline: none;
+        text-align:center;
+        padding: 15px 50px;
+        margin-top: 10px;
+        outline: none !important;
+    }
+   
+
+    .inserir-creditos button{
+        outline: none !important;
+    }
+    
+    .inserir-creditos span{
+        color: white;
+        
+    }
+    
+    .card-inserir-saldo{
+        background: #FFFFFF;
+        box-shadow: -1px 7px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        margin-top: 15px;
+        width: 100%;
+        outline: none;
+        cursor: pointer;
+        height: 131px;
+        
+    }
+   
+    
+    
+    .catraca-svg {
+        text-align: center;
+        width: 100%;
+    }
+    
+
+    
+    .mostrarValor {
+        background: rgba(255, 255, 255, 0);
+        text-align: center;
+        border: 0px;
+        font-size: 14px;
+    }
+    
+    .mostrarValor2 {
+        background: rgba(255, 255, 255, 0);
+        text-align: center;
+        border: 0px;
+        font-size: 14px;
+        animation: fade 10000ms infinite;
+    }
+    
+    .formulario-recarregar{
+        background: #fff;
+    }
+    
+    .formulario-recarregar label{
+        display: black;
+        position: relative;
+        left:8px;
+        color: #7C7979;
+    }   .transparente{
+        background-color:  rgba(255, 255, 255, 0);
+     }
+    .sair{
+        margin-top: 140%;
+    }
+    .icone
+    {   
+        margin-top: -19px;
+        margin-right: -10px;
+        height: 16px;
+    }
+    .label-md {
+        margin: 11px 7px 15px 0;
+        padding: 2px;
+    }
+    ion-backdrop {
+        background-color: orange !important;
+    }
+    
+}
