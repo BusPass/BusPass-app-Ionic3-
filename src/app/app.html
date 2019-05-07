@@ -1,0 +1,52 @@
+
+<ion-menu [content]="content">
+   <!-- <ion-buttons slot="start">
+    <ion-menu-button></ion-menu-button>
+  </ion-buttons>  -->
+  
+  
+    <ion-content>
+  
+      <div class="col-12">
+  
+  
+        <div (click)="closeMenu()" class="menu-close">
+          <ion-icon ios="ios-close" md="md-close"></ion-icon>
+        </div>
+      </div>
+  
+      <div class="col-12">
+        <span class="user-name">Ola {{dados?.NomeCompleto}}!</span>
+      </div>
+  
+      <div class="row">
+        <div class="col-12">
+  
+  
+  
+            <header-menu></header-menu>
+  
+  
+  
+        </div>
+      </div>
+  
+    </ion-content>
+    <ion-footer>
+      <ion-toolbar>
+        <div class="row">
+          <div class="col-12">
+            <ion-buttons full start>
+              <button  ion-item icon-only (click)="Sair()">
+                <ion-icon name="exit"></ion-icon> Sair
+              </button>
+            </ion-buttons>
+          </div>
+        </div>
+  
+      </ion-toolbar>
+    </ion-footer>
+  
+  </ion-menu>
+  
+  <ion-nav #nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
